@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: customer-api-cicd
+spec:
+  template:
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/mlops-course-441515/customer-api-repo/customer-api-cicd-v1:latest
+          env:
+          ports:
+            - containerPort: 4005
