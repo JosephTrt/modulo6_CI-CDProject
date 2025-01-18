@@ -30,16 +30,16 @@ jobs:
         flake8 src/
     
     - name: Check code formatting with black
-    run: |
-      black --check src/
+      run: |
+        black --check src/
     
     - name: Format code with black
       run: |
         black src/
     
     - name: Run tests
-      run: |
-        pytest --cov=app --cov-report=xml src/tests/
+        run: |
+          pytest --cov=app --cov-report=xml src/tests/
 
     - name: Submit Cloud Build
       run: |
