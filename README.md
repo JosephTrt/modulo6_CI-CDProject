@@ -180,6 +180,6 @@ project/
 
 ---
 ## Extras:
-![alt text](image-2.png)
+![alt text](imgs/image-2.png)
 
-![alt text](image-3.png)
+![alt text](imgs/image-3.png)
