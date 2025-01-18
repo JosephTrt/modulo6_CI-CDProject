@@ -1,10 +1,13 @@
 import pickle
 
+
 def load_model():
     with open("src/classifier.pkl", "rb") as f:
         return pickle.load(f)
 
+
 model = load_model()
+
 
 def predict_category(gender: str, age: int, annual_income: float) -> str:
     gender_num = 0 if gender.lower() == "male" else 1

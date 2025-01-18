@@ -1,5 +1,6 @@
 from src.utils import predict_category
 
+
 def test_predict_category():
     """Prueba la función de predicción con valores válidos."""
     gender = "Female"
