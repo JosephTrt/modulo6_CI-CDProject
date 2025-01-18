@@ -12,7 +12,6 @@ Este proyecto desarrolla una API para la gestión de datos de clientes, con func
 4. [Pipeline CI/CD](#pipeline-cicd)
 5. [Pruebas](#pruebas)
 6. [Guía para Recrear el Proyecto en Local](#guía-para-recrear-el-proyecto-en-local)
-7. [Próximos Pasos](#próximos-pasos)
 
 ---
 
@@ -64,7 +63,7 @@ project/
 ### **Swagger UI**
 - La documentación interactiva está disponible en `/docs`. Puedes probar los endpoints directamente desde esta interfaz.
 
-![alt text](image-4.png)
+![alt text](imgs/image-4.png)
 
 ### **1. /healthcheck**
 - **Método:** GET
@@ -76,7 +75,7 @@ project/
       "message": "API is running."
   }
   ```
-![alt text](image-5.png)
+![alt text](imgs/image-5.png)
 
 
 ### **2. /predict**
@@ -101,7 +100,7 @@ project/
       "prediction": "High"
   }
   ```
-![alt text](image-6.png)
+![alt text](imgs/image-6.png)
 
 
 ---
@@ -126,9 +125,9 @@ project/
 8. **Despliegue en Cloud Run:**
    - Despliega la imagen en Google Cloud Run usando `service.yaml`.
 
-![alt text](image.png)
+![alt text](imgs/image.png)
 
-![alt text](image-1.png)
+![alt text](imgs/image-1.png)
 ---
 
 ## **Pruebas**
@@ -159,8 +158,8 @@ project/
 ### **Pasos**
 1. **Clona el Repositorio:**
    ```bash
-   git clone https://github.com/usuario/customer-api-project.git
-   cd customer-api-project
+   git clone https://github.com/JosephTrt/modulo6_CI-CDProject.git
+   cd modulo6_CI-CDProject
    ```
 2. **Crea un Entorno Virtual:**
    ```bash
@@ -173,7 +172,7 @@ project/
    ```
 4. **Ejecuta Localmente:**
    ```bash
-   uvicorn src.main:app --host 0.0.0.0 --port 8000
+   uvicorn src.main:app --reload
    ```
 5. **Accede a la Documentación:**
    - Swagger: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
