@@ -38,8 +38,8 @@ jobs:
         black src/
     
     - name: Run tests
-        run: |
-          pytest --cov=app --cov-report=xml src/tests/
+      run: |
+        pytest --cov=app --cov-report=xml src/tests/
 
     - name: Submit Cloud Build
       run: |
